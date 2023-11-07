@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+float get_sqrt_by_Heron_x(float sqrt_by_Heron_a)
+{
+
+    return 0.0;
+}
+
 float sqrt_by_Heron(int a, int x)
 {
     float sqrt_by_Heron_a = (float) a;
