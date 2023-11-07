@@ -33,16 +33,16 @@ float sqrt_by_Heron(int a, int x)
 
         //
         } while(last_iter_value != sqrt_by_Heron_x);
+
+        //
+        return sqrt_by_Heron_x;
     
     //
     } else {
 
         //
-        
+        return 0.0;
     }
-
-    //
-    return sqrt_by_Heron_x;
 }
 
 //
