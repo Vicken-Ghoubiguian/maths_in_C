@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 //
 float get_sqrt_by_Heron_x(float sqrt_by_Heron_a)
 {
@@ -17,17 +19,27 @@ float sqrt_by_Heron(int a, int x)
     float last_iter_value = 0.0;
 
     //
-    sqrt_by_Heron_x = (sqrt_by_Heron_x + (sqrt_by_Heron_a / sqrt_by_Heron_x)) / 2.0;
-
-    //
-    do {
-
+    if(0 < a)
+    {
         //
-        last_iter_value = sqrt_by_Heron_x;
         sqrt_by_Heron_x = (sqrt_by_Heron_x + (sqrt_by_Heron_a / sqrt_by_Heron_x)) / 2.0;
 
+        //
+        do {
+
+            //
+            last_iter_value = sqrt_by_Heron_x;
+            sqrt_by_Heron_x = (sqrt_by_Heron_x + (sqrt_by_Heron_a / sqrt_by_Heron_x)) / 2.0;
+
+        //
+        } while(last_iter_value != sqrt_by_Heron_x);
+    
     //
-    } while(last_iter_value != sqrt_by_Heron_x);
+    } else {
+
+        //
+        
+    }
 
     //
     return sqrt_by_Heron_x;
@@ -37,7 +49,7 @@ float sqrt_by_Heron(int a, int x)
 int main()
 {
     //
-    printf("%.14f", sqrt_by_Heron(3.0, 1.0));
+    printf("%.14f", sqrt_by_Heron(9.0, 3.0));
 
     //
     return 0;
