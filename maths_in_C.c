@@ -5,7 +5,6 @@ float sqrt_by_Heron(int a, int x)
 {
     float sqrt_by_Heron_a = (float) a;
     float sqrt_by_Heron_x = (float) x;
-
     float last_iter_value = 0.0;
 
     sqrt_by_Heron_x = (sqrt_by_Heron_x + (sqrt_by_Heron_a / sqrt_by_Heron_x)) / 2.0;
@@ -22,6 +21,6 @@ float sqrt_by_Heron(int a, int x)
 
 int main()
 {
-    printf("%.8f", sqrt_by_Heron(3.0, 1.0));
+    printf("%.14f", sqrt_by_Heron(3.0, 1.0));
     return 0;
 }
