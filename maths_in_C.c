@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float sqrt_by_Heron(int a, int x, int nbr_i)
+float sqrt_by_Heron(int a, int x)
 {
     return 0.0;
 }
