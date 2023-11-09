@@ -49,7 +49,10 @@ float sqrt_by_Heron(int a, int x)
 int main()
 {
     //
-    printf("%.14f", sqrt_by_Heron(9.0, 3.0));
+    float sqrt_calculed = sqrt_by_Heron(3.0, 1.0);
+
+    //
+    printf("%f\n", sqrt_calculed);
 
     //
     return 0;
