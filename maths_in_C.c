@@ -24,9 +24,6 @@ long long int iterative_factorial(int number)
             //
             reverse_iteration--;
 
-            printf("\n\na : %lld\n\n", reverse_iteration);
-            printf("\n\nb : %lld\n\n", returned_number);
-
             //
             returned_number = returned_number * reverse_iteration;
 
