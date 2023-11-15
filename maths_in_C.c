@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 //
-int iterative_factorial(int number)
+long long int iterative_factorial(int number)
 {
     //
     if(number <= 0)
@@ -13,16 +13,19 @@ int iterative_factorial(int number)
     else
     {
         //
-        int reverse_iteration = number;
+        long long int reverse_iteration = number;
 
         //
-        int returned_number = number;
+        long long int returned_number = number;
 
         //
         do {
 
             //
             reverse_iteration--;
+
+            printf("\n\na : %lld\n\n", reverse_iteration);
+            printf("\n\nb : %lld\n\n", returned_number);
 
             //
             returned_number = returned_number * reverse_iteration;
@@ -84,7 +87,7 @@ int main()
     printf("%.20f\n", sqrt_by_Heron(3.0, 1.0));
 
     //
-    printf("%d\n", iterative_factorial(12));
+    printf("%lld\n", iterative_factorial(13));
 
     //
     return 0;
