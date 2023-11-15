@@ -63,6 +63,9 @@ float sqrt_by_Heron(int a, int x)
 int main()
 {
     //
+    printf("%.20f\n", sqrt_by_Heron(3.0, 1.0));
+
+    //
     printf("%d\n", iterative_factorial(9));
 
     //
