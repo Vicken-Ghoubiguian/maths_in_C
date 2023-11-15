@@ -4,16 +4,25 @@
 //
 int iterative_factorial(int number)
 {
+    //
     int reverse_iteration = number;
+
+    //
     int returned_number = number;
 
+    //
     do {
 
+        //
         reverse_iteration--;
+
+        //
         returned_number = returned_number * reverse_iteration;
 
+    //
     } while(reverse_iteration > 1);
 
+    //
     return returned_number;
 }
 
