@@ -84,7 +84,7 @@ int main()
     printf("%.20f\n", sqrt_by_Heron(3.0, 1.0));
 
     //
-    printf("%d\n", iterative_factorial(9));
+    printf("%d\n", iterative_factorial(12));
 
     //
     return 0;
