@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 //
-long long int iterative_factorial(int number)
+long long int iterative_factorial(long long int number)
 {
     //
     if(number <= 0)
