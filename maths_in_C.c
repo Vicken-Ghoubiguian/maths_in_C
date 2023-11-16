@@ -2,6 +2,19 @@
 #include <stdlib.h>
 
 //
+long long int recursive_factorial(long long int number)
+{
+    if(number <= 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return number * recursive_factorial(number - 1);
+    }
+}
+
+//
 long long int iterative_factorial(long long int number)
 {
     //
