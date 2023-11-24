@@ -12,7 +12,33 @@ int recursive_PGCD(int a, int b)
 int iterative_PGCD(int a, int b)
 {
     //
-    return 0;
+    int r = a % b;
+
+    //
+    if(r == 0)
+    {
+        //
+        return b;
+    }
+    //
+    else
+    {
+        //
+        while(r != 0)
+        {
+            //
+            a = b;
+
+            //
+            b = r;
+
+            //
+            r = a % b;
+        }
+
+        //
+        return b;
+    }
 }
 
 //
@@ -127,6 +153,9 @@ int main()
 
     //
     printf("%lld\n", recursive_factorial(9));
+
+    //
+    printf("%d\n", iterative_PGCD(10, 3));
 
     //
     return 0;
