@@ -2,6 +2,12 @@
 #include <stdlib.h>
 
 //
+int iterative_PGCD(int a, int b)
+{
+    return 0;
+}
+
+//
 long long int recursive_factorial(long long int number)
 {
     //
