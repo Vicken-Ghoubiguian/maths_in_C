@@ -5,7 +5,20 @@
 int recursive_PGCD(int a, int b)
 {
     //
-    return 0;
+    int r = a % b;
+
+    //
+    if(r == 0)
+    {
+        //
+        return b;
+    }
+    //
+    else
+    {
+        //
+        return recursive_PGCD(b, r);
+    }
 }
 
 //
@@ -155,7 +168,10 @@ int main()
     printf("%lld\n", recursive_factorial(9));
 
     //
-    printf("%d\n", iterative_PGCD(10, 3));
+    printf("%d\n", iterative_PGCD(15, 10));
+
+    //
+    printf("%d\n", recursive_PGCD(15, 10));
 
     //
     return 0;
