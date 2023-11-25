@@ -5,6 +5,13 @@
 int recursive_GCD(int a, int b)
 {
     //
+    if(a < 0 || b < 0)
+    {
+        //
+        return 0;
+    }
+
+    //
     int r = a % b;
 
     //
@@ -24,6 +31,13 @@ int recursive_GCD(int a, int b)
 // Iterative function to calculate GCD of 2 int which are 'a' and 'b'
 int iterative_GCD(int a, int b)
 {
+    //
+    if(a < 0 || b < 0)
+    {
+        //
+        return 0;
+    }
+
     //
     int r = a % b;
 
@@ -57,6 +71,13 @@ int iterative_GCD(int a, int b)
 //
 int iterative_LCM(int a, int b)
 {
+    //
+    if(a < 0 || b < 0)
+    {
+        //
+        return 0;
+    }
+
     //
     int gcd = iterative_GCD(a, b);
 
