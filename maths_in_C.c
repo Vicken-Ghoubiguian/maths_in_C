@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//
+// Recursive function to calculate GCD of 2 int which are 'a' and 'b'
 int recursive_PGCD(int a, int b)
 {
     //
@@ -21,7 +21,7 @@ int recursive_PGCD(int a, int b)
     }
 }
 
-//
+// Iterative function to calculate GCD of 2 int which are 'a' and 'b'
 int iterative_PGCD(int a, int b)
 {
     //
