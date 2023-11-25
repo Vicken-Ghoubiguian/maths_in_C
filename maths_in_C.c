@@ -22,7 +22,7 @@ int recursive_GCD(int a, int b)
 }
 
 // Iterative function to calculate GCD of 2 int which are 'a' and 'b'
-int iterative_PGCD(int a, int b)
+int iterative_GCD(int a, int b)
 {
     //
     int r = a % b;
@@ -168,7 +168,7 @@ int main()
     printf("%lld\n", recursive_factorial(9));
 
     //
-    printf("%d\n", iterative_PGCD(15, 10));
+    printf("%d\n", iterative_GCD(15, 10));
 
     //
     printf("%d\n", recursive_GCD(15, 10));
