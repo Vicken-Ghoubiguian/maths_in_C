@@ -55,6 +55,19 @@ int iterative_GCD(int a, int b)
 }
 
 //
+int iterative_LCM(int a, int b)
+{
+    //
+    int gcd = iterative_GCD(a, b);
+
+    //
+    int mult = a * b;
+
+    //
+    return mult / gcd;
+}
+
+//
 long long int recursive_factorial(long long int number)
 {
     //
@@ -172,6 +185,9 @@ int main()
 
     //
     printf("%d\n", recursive_GCD(15, 10));
+
+    //
+    printf("%d\n", iterative_LCM(60, 168));
 
     //
     return 0;
