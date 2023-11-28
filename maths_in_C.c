@@ -147,14 +147,14 @@ float get_sqrt_by_Heron_x(float sqrt_by_Heron_a)
     return 0.0;
 }
 
-// Recursive function to calculate square root of an int named 'a' by the method of Heron
+// Recursive function to calculate square root of an int named 'a' by the Heron's method
 float recursive_sqrt_by_Heron(int a, int x)
 {
     //
     return 0.0;
 }
 
-// Iterative function to calculate square root of an int named 'a' by the method of Heron
+// Iterative function to calculate square root of an int named 'a' by the Heron's method
 float iterative_sqrt_by_Heron(int a, int x)
 {
     //
